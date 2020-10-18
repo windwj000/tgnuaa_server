@@ -1,0 +1,123 @@
+2020-10-16 11:25:33,395 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89333 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:25:33,398 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:25:35,017 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:25:35,032 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:25:35,048 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:25:35,049 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:25:35,057 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:25:35,155 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:25:35,156 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1719 ms
+2020-10-16 11:25:35,337 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:25:35,491 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:25:35,759 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:25:36,379 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:25:36,442 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:25:36,485 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:25:36,496 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 3.399 seconds (JVM running for 4.058)
+2020-10-16 11:26:53,001 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:26:53,005 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:26:53,038 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 30 ms
+2020-10-16 11:28:48,031 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:28:48,051 INFO [Thread-9] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
+2020-10-16 11:29:08,838 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89417 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:29:08,841 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:29:09,932 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:29:09,951 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:29:09,958 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:29:09,959 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:29:09,965 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:29:10,042 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:29:10,043 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1167 ms
+2020-10-16 11:29:10,148 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:29:10,263 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:29:10,423 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:29:10,711 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:29:10,730 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:29:10,741 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:29:10,744 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 2.184 seconds (JVM running for 2.998)
+2020-10-16 11:29:15,586 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:29:15,589 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:29:15,597 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 8 ms
+2020-10-16 11:32:09,819 INFO [Thread-7] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:32:09,836 INFO [Thread-7] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
+2020-10-16 11:32:28,989 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89489 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:32:28,993 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:32:30,237 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:32:30,251 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:32:30,258 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:32:30,259 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:32:30,266 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:32:30,353 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:32:30,353 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1323 ms
+2020-10-16 11:32:30,468 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:32:30,606 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:32:30,800 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:32:31,122 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:32:31,138 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:32:31,149 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:32:31,152 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 2.455 seconds (JVM running for 3.236)
+2020-10-16 11:32:34,397 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:32:34,398 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:32:34,408 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 10 ms
+2020-10-16 11:33:09,252 INFO [Thread-7] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:33:09,261 INFO [Thread-7] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
+2020-10-16 11:33:18,509 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89510 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:33:18,511 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:33:19,615 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:33:19,623 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:33:19,630 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:33:19,630 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:33:19,635 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:33:19,694 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:33:19,695 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1139 ms
+2020-10-16 11:33:19,793 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:33:19,868 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:33:20,027 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:33:20,301 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:33:20,318 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:33:20,328 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:33:20,331 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 2.058 seconds (JVM running for 2.586)
+2020-10-16 11:33:30,410 INFO [Thread-6] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:33:30,412 INFO [Thread-6] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
+2020-10-16 11:34:21,521 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89534 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:34:21,524 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:34:22,766 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:34:22,781 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:34:22,790 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:34:22,790 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:34:22,801 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:34:22,915 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:34:22,915 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1364 ms
+2020-10-16 11:34:23,055 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:34:23,198 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:34:23,426 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:34:23,734 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:34:23,751 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:34:23,767 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:34:23,769 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 2.492 seconds (JVM running for 3.072)
+2020-10-16 11:34:29,043 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:34:29,044 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:34:29,050 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 6 ms
+2020-10-16 11:35:04,214 INFO [Thread-7] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:35:04,225 INFO [Thread-7] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
+2020-10-16 11:35:28,240 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:50] Starting DemoApplication on wangjiedeMacBook-Pro.local with PID 89568 (/Users/wangjie/project/tgnuaa_server/target/classes started by wangjie in /Users/wangjie/project/tgnuaa_server)
+2020-10-16 11:35:28,244 INFO [main] c.e.d.DemoApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-10-16 11:35:29,384 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:35:29,393 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:35:29,400 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-10-16 11:35:29,400 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-10-16 11:35:29,406 INFO [main] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjie/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-16 11:35:29,492 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-10-16 11:35:29,492 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1212 ms
+2020-10-16 11:35:29,597 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-10-16 11:35:29,707 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:991] {dataSource-1} inited
+2020-10-16 11:35:29,864 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:35:30,155 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-10-16 11:35:30,170 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:173] Using a shared selector for servlet write/read
+2020-10-16 11:35:30,183 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-16 11:35:30,187 INFO [main] c.e.d.DemoApplication [StartupInfoLogger.java:59] Started DemoApplication in 2.197 seconds (JVM running for 2.899)
+2020-10-16 11:35:32,620 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:35:32,620 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:35:32,630 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 10 ms
+2020-10-16 11:36:00,156 INFO [Thread-7] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:36:00,172 INFO [Thread-7] c.a.d.p.DruidDataSource [DruidDataSource.java:1928] {dataSource-1} closed
