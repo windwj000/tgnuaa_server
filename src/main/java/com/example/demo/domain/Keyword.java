@@ -15,6 +15,8 @@ public class Keyword {
 
     private String identity;
 
+    private int count;
+
     private int pid;
 
     private List<Keyword> children = new ArrayList<>();
@@ -57,6 +59,14 @@ public class Keyword {
 
     public void setIdentity(String identity) {
         this.identity = identity;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public int getPid() {

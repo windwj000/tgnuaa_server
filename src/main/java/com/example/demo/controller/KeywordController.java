@@ -1,8 +1,12 @@
 package com.example.demo.controller;
 
+import com.example.demo.domain.Keyword;
+import com.example.demo.domain.LawCase;
 import com.example.demo.mapper.KeywordMapper;
+import com.example.demo.mapper.LawCaseMapper;
 import com.example.demo.web.AjaxResult;
 import com.example.demo.web.BaseController;
+import com.spire.doc.Document;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -10,7 +14,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/keyword")
@@ -22,9 +29,40 @@ public class KeywordController extends BaseController {
     @Autowired
     private KeywordMapper keywordMapper;
 
-    @ApiOperation(value = "查询关键词")
+    @Autowired
+    private LawCaseMapper lawCaseMapper;
+
+    // 根据身份模式进行展示
+    @ApiOperation(value = "根据身份查询关键词")
     @GetMapping(value = "/select")
-    public AjaxResult select(){
-        return AjaxResult.success(keywordMapper.select(10000));
+    public AjaxResult select(@RequestParam String identity){
+        int id=keywordMapper.selectByIdentity(identity);
+        return AjaxResult.success(keywordMapper.select(id));
+    }
+
+    /*@ApiOperation(value = "根据关键词显示案例")
+    @GetMapping(value = "/cases")
+    public AjaxResult getCase(String keyword){
+        List<LawCase> list=lawCaseMapper.selectByKeyword(keyword);
+        if (list == null) {
+            return AjaxResult.error("该关键词没有对应的案例！");
+        }
+
+    }*/
+
+    // 根据文件路径读取文件
+    public String showCaseDescription(String path){
+        Document document = new Document(path);
+        return document.getText();
+    }
+
+    // 计算关键词对于的案例数
+    @GetMapping(value = "/count")
+    public void count(){
+        List<Keyword> keywordList=keywordMapper.selectAll();
+        for (Keyword k : keywordList) {
+            List<LawCase> list=lawCaseMapper.selectByKeyword(k.getName());
+            keywordMapper.update(k.getName(),list.size());
+        }
     }
 }
