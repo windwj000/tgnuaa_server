@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.domain.Keyword;
 import com.example.demo.domain.LawCase;
+import com.example.demo.domain.LawCaseResponse;
 import com.example.demo.mapper.KeywordMapper;
 import com.example.demo.mapper.LawCaseMapper;
 import com.example.demo.web.AjaxResult;
@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -40,15 +41,21 @@ public class KeywordController extends BaseController {
         return AjaxResult.success(keywordMapper.select(id));
     }
 
-    /*@ApiOperation(value = "根据关键词显示案例")
+    @ApiOperation(value = "根据关键词显示案例")
     @GetMapping(value = "/cases")
-    public AjaxResult getCase(String keyword){
+    public AjaxResult getCase(@RequestParam String keyword){
         List<LawCase> list=lawCaseMapper.selectByKeyword(keyword);
         if (list == null) {
             return AjaxResult.error("该关键词没有对应的案例！");
         }
-
-    }*/
+        List<LawCaseResponse> res=new ArrayList<>();
+        for (LawCase l : list) {
+            LawCaseResponse lawCaseResponse=new LawCaseResponse(l.getId(),l.getPath(),l.getKeyword());
+            lawCaseResponse.setContent(showCaseDescription(l.getPath()));
+            res.add(lawCaseResponse);
+        }
+        return AjaxResult.success(res);
+    }
 
     // 根据文件路径读取文件
     public String showCaseDescription(String path){
@@ -56,7 +63,17 @@ public class KeywordController extends BaseController {
         return document.getText();
     }
 
-    // 计算关键词对于的案例数
+    /*@GetMapping(value = "/test")
+    public void test(){
+        List<LawCase> list=lawCaseMapper.selectAll();
+        for (LawCase lawCase : list) {
+            String path=lawCase.getPath();
+            String newPath=path.substring(1,path.length());
+            lawCaseMapper.update(lawCase.getId(),newPath);
+        }
+    }*/
+
+    /*// 计算关键词对于的案例数
     @GetMapping(value = "/count")
     public void count(){
         List<Keyword> keywordList=keywordMapper.selectAll();
@@ -64,5 +81,5 @@ public class KeywordController extends BaseController {
             List<LawCase> list=lawCaseMapper.selectByKeyword(k.getName());
             keywordMapper.update(k.getName(),list.size());
         }
-    }
+    }*/
 }
