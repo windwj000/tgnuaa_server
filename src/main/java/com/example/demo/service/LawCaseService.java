@@ -9,4 +9,15 @@ public class LawCaseService {
 
     @Autowired
     private LawCaseMapper lawCaseMapper;
+
+    /**
+     * 根据path获得case的title
+     * @param path
+     * @return
+     */
+    public String getCaseTitle(String path) {
+        int fromIndex = path.lastIndexOf('/');
+        int endIndex = path.lastIndexOf('.');
+        return path.substring(fromIndex + 1, endIndex);
+    }
 }

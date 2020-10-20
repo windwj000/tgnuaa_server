@@ -4,6 +4,7 @@ import com.example.demo.domain.LawCase;
 import com.example.demo.domain.LawCaseResponse;
 import com.example.demo.mapper.KeywordMapper;
 import com.example.demo.mapper.LawCaseMapper;
+import com.example.demo.service.LawCaseService;
 import com.example.demo.web.AjaxResult;
 import com.example.demo.web.BaseController;
 import com.spire.doc.Document;
@@ -31,6 +32,9 @@ public class KeywordController extends BaseController {
     private KeywordMapper keywordMapper;
 
     @Autowired
+    private LawCaseService lawCaseService;
+
+    @Autowired
     private LawCaseMapper lawCaseMapper;
 
     // 根据身份模式进行展示
@@ -52,6 +56,7 @@ public class KeywordController extends BaseController {
         for (LawCase l : list) {
             LawCaseResponse lawCaseResponse=new LawCaseResponse(l.getId(),l.getPath(),l.getKeyword());
             lawCaseResponse.setContent(showCaseDescription(l.getPath()));
+            lawCaseResponse.setTitle(lawCaseService.getCaseTitle(l.getPath()));
             res.add(lawCaseResponse);
         }
         return AjaxResult.success(res);

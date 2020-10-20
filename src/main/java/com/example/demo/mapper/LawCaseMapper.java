@@ -21,4 +21,7 @@ public interface LawCaseMapper {
 
     @Update({"update law_case set path=#{path} where id=#{id}"})
     int update(int id,String path);
+
+    @Select("select keyword from law_case where path = #{path}")
+    List<String> selectCaseAllKeyWords(String path);
 }

@@ -1,12 +1,18 @@
 package com.example.demo.domain;
 
+import java.util.ArrayList;
+
 public class LawCaseResponse {
 
     private int id;
 
+    private String title;
+
     private String path;
 
     private String keyword;
+
+    private ArrayList<String> keywordsList;
 
     private String content;
 
@@ -46,5 +52,21 @@ public class LawCaseResponse {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public ArrayList<String> getKeywordsList() {
+        return keywordsList;
+    }
+
+    public void setKeywordsList(ArrayList<String> keywordsList) {
+        this.keywordsList = keywordsList;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
