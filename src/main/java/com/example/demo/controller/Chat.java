@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.stereotype.Component;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
 @ServerEndpoint("/chat/{sendUser}")
+@Component
 public class Chat{
     // 用户在线数
     private static int onLineCount = 0;
