@@ -84,4 +84,18 @@ public class Keyword {
     public void setChildren(List<Keyword> children) {
         this.children = children;
     }
+
+    @Override
+    public String toString() {
+        return "Keyword{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", rank=" + rank +
+                ", priority=" + priority +
+                ", identity='" + identity + '\'' +
+                ", count=" + count +
+                ", pid=" + pid +
+                ", children=" + children +
+                '}';
+    }
 }
