@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.common.PasswordUtil;
 import com.example.demo.domain.Keyword;
 import com.example.demo.mapper.KeywordMapper;
 import com.example.demo.web.AjaxResult;
@@ -61,11 +62,12 @@ public class AnalysisAndForecastController {
     @GetMapping(value = "/algorithm")
     public AjaxResult algorithm(@RequestParam String identity,
                                 @RequestParam String fileName) throws IOException {
-        String res=null;
+        StringBuilder res=new StringBuilder();
         Socket socket=new Socket("127.0.0.1", 2341);
 
-        String testName="keywords/"+fileName;
-        File file = new File(testName);
+        String testName=getFileName();
+        String testPath="keywords/"+testName;
+        File file = new File(testPath);
         if(!file.exists()){
             file.createNewFile();
         }
@@ -74,24 +76,27 @@ public class AnalysisAndForecastController {
         OutputStream os= null;
         InputStream is = null;
         try {
-            bw = new BufferedWriter(new FileWriter(testName));
+            bw = new BufferedWriter(new FileWriter(testPath));
             for (String k : keywords) {
                 bw.write(k);
-                bw.newLine();
+                bw.write(",");
                 bw.flush();
             }
 
             os= socket.getOutputStream();
-            fileName="testData.csv";
-//            String msg=fileName+" "+getCsv(identity);
-            String msg=fileName+" "+"2.csv";
+            String msg=testName+" "+getCsv(identity);
+//            String msg="testData.csv"+" "+"2.csv";
             os.write(msg.getBytes());
 
             is =socket.getInputStream();
-            byte[] ba=new byte[is.available()];
+            byte[] ba=new byte[1024];
             is.read(ba);
-            res=new String(ba);
-            System.out.println(res);
+            for (byte b : ba) {
+                if (b != 0) {
+                    System.out.println(b);
+                    res.append((char)(b));
+                }
+            }
         } catch (IOException e) {
             return AjaxResult.error("文件io错误："+e.getMessage());
         }finally {
@@ -99,7 +104,7 @@ public class AnalysisAndForecastController {
             os.close();
             socket.close();
         }
-        return AjaxResult.success(1);
+        return AjaxResult.success(res.toString());
     }
 
     // 根据文件路径读取文件
@@ -137,17 +142,23 @@ public class AnalysisAndForecastController {
     public String getCsv(String identity){
         switch (identity) {
             case "运输公司":
-                return "航空货物运输合同纠纷.csv";
+                return "1.csv";
             case "航空公司":
-                return "人身、财产侵权责任.csv";
+                return "2.csv";
             case "托运人":
-                return "物权纠纷.csv";
+                return "3.csv";
             case "保险公司":
-                return "保险纠纷.csv";
+                return "4.csv";
             case "旅客":
-                return "航空旅客运输合同.csv";
+                return "5.csv";
             default:
                 return null;
         }
+    }
+
+    // 获取文件名
+    public String getFileName(){
+        String id=PasswordUtil.generateUUID();
+        return id+".csv";
     }
 }

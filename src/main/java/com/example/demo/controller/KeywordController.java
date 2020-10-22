@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.domain.Keyword;
 import com.example.demo.domain.LawCase;
 import com.example.demo.domain.LawCaseResponse;
 import com.example.demo.mapper.KeywordMapper;
@@ -77,13 +76,13 @@ public class KeywordController extends BaseController {
         return document.getText();
     }
 
-    @GetMapping(value = "/test")
+    /*@GetMapping(value = "/test")
     public void test(@RequestParam String identity){
         int id=keywordMapper.selectByIdentity(identity);
         Keyword k=keywordMapper.select(id);
         String key="keyword"+identity;
         redisTemplate.opsForValue().set(key,k);
-    }
+    }*/
 
     /*@GetMapping(value = "/test")
     public void test(){
