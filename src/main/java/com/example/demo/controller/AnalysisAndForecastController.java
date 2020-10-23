@@ -36,7 +36,7 @@ public class AnalysisAndForecastController {
 
     @ApiOperation(value = "用户上传案例")
     @PostMapping(value = "/upload")
-    public AjaxResult upload(@RequestParam("file") MultipartFile multipartFile) throws IOException {
+    public AjaxResult upload(MultipartFile multipartFile) throws IOException {
         if (multipartFile.isEmpty()) {
             return AjaxResult.error("上传文件为空！");
         }
@@ -72,6 +72,9 @@ public class AnalysisAndForecastController {
             file.createNewFile();
         }
         List<String> keywords = getKeywordArray(identity, fileName);
+        for (String k:keywords) {
+            System.out.println(k);
+        }
         BufferedWriter bw = null;
         OutputStream os= null;
         InputStream is = null;
@@ -104,7 +107,12 @@ public class AnalysisAndForecastController {
             os.close();
             socket.close();
         }
-        return AjaxResult.success(res.toString());
+
+        String ret=res.toString();
+        if (ret.equals("")) {
+            return AjaxResult.error("不匹配！");
+        }
+        return AjaxResult.success(ret);
     }
 
     // 根据文件路径读取文件
